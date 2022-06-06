@@ -229,7 +229,7 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
                 handler.postDelayed(this,1);
 
                 if(turn_left_flag == 1){
-                    send("5");
+                    send("pivot_left");
                     turn_left_flag = 2;
                 }
                 else if (turn_left_flag == 0){
@@ -238,7 +238,7 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
                 }
 
                 if(turn_right_flag == 1){
-                    send("6");
+                    send("pivot_right");
                     turn_right_flag = 2;
                 }
                 else if (turn_right_flag == 0){
