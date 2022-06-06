@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2d2d"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="411dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="io.github.controlwear.joystickdemo.MainActivity">
+
+        <TextView
+            android:id="@+id/textView_angle_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="0°"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/textView_strength_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_angle_left"
+            android:layout_marginStart="10dp"
+            android:text="0%"
+            android:textColor="@color/white" />
+
+
+        <!--android:background="@drawable/joystick_background"
+            custom:JV_buttonImage="@drawable/pink_ball"-->
+
+        <io.github.controlwear.virtual.joystick.android.JoystickView
+            android:id="@+id/joystickView_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:JV_backgroundColor="#707070"
+            app:JV_backgroundSizeRatio="80%"
+            app:JV_buttonColor="#E3C436"
+            app:JV_buttonSizeRatio="20%"
+            app:JV_fixedCenter="false" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/o"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="290dp"
+            android:background="@drawable/border" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/i"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="223dp"
+            android:background="@drawable/border" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/j"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="156dp"
+            android:background="@drawable/border" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/t"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="320dp"
+            android:background="@drawable/border" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/z"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="253dp"
+            android:background="@drawable/border" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/L"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="186dp"
+            android:background="@drawable/border" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/s"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="119dp"
+            android:background="@drawable/border" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rotate_clock"
+            android:layout_width="133dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="225dp"
+            android:layout_marginEnd="250dp"
+            android:background="@drawable/rotary" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rotate_anti"
+            android:layout_width="133dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="225dp"
+            android:layout_marginEnd="123dp"
+            android:background="@drawable/rotary" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/zero"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/one"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/two"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/three"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/four"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="270dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/textView_angle_right"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:text="0°"/>-->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/textView_strength_right"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_below="@+id/textView_angle_right"-->
+        <!--            android:text="0%"/>-->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/textView_coordinate_right"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_below="@+id/textView_strength_right"-->
+        <!--            android:text="x050:y050"/>-->
+
+
+        <!--        <io.github.controlwear.virtual.joystick.android.JoystickView-->
+        <!--            xmlns:custom="http://schemas.android.com/apk/res-auto"-->
+        <!--            android:id="@+id/joystickView_right"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_marginTop="64dp"-->
+        <!--            custom:JV_borderWidth="8dp"-->
+        <!--            custom:JV_backgroundColor="#009688"-->
+        <!--            custom:JV_borderColor="#00796B"-->
+        <!--            custom:JV_buttonColor="#FF6E40"/>-->
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
