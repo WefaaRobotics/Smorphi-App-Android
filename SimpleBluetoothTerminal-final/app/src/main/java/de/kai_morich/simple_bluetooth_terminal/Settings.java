@@ -13,7 +13,6 @@ public class Settings extends AppCompatActivity {
 
     public Button Setting_btn1;
     public Button Setting_btn2;
-    public Button Setting_btn3;
     public Button Setting_btn4;
 
     @Override
@@ -23,7 +22,6 @@ public class Settings extends AppCompatActivity {
 
         Setting_btn1 = (Button) findViewById(R.id.setting1);
         Setting_btn2 = (Button) findViewById(R.id.setting2);
-        Setting_btn3 = (Button) findViewById(R.id.setting3);
         Setting_btn4 = (Button) findViewById(R.id.setting4);
 
         Setting_btn1.setOnClickListener(new View.OnClickListener() {
@@ -40,13 +38,6 @@ public class Settings extends AppCompatActivity {
             }
         });
 
-        Setting_btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openChangeNamePage();
-            }
-        });
-
         Setting_btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,10 +46,6 @@ public class Settings extends AppCompatActivity {
         });
     }
 
-    public void openChangeNamePage(){
-        Intent intent = new Intent(this, ChangeName.class);
-        startActivity(intent);
-    }
 
     public void openPairingPage(){
         Intent intent = new Intent(this, Pairing.class);

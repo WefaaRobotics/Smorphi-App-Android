@@ -26,9 +26,6 @@
             android:name=".Settings"
             android:exported="true" />
         <activity
-            android:name=".ChangeName"
-            android:exported="true" />
-        <activity
             android:name=".Pairing"
             android:exported="true" />
         <activity
