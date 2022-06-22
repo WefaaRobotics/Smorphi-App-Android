@@ -1,4 +1,4 @@
-package de.kai_morich.simple_bluetooth_terminal;
+package de.kai_morich.smorphi_app;
 
 interface SerialListener {
     void onSerialConnect      ();

@@ -1,4 +1,4 @@
-package de.kai_morich.simple_bluetooth_terminal;
+package de.kai_morich.smorphi_app;
 
 import android.text.Editable;
 import android.text.InputType;
